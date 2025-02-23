@@ -54,10 +54,46 @@ a {
 
 }
 
-.nav-menu li {
- margin-left: 20px;
+
+li{
+    padding-left: 50px;
 }
 
+ul li a{
+  text-decoration: none;
+  padding: 5px 0;
+  display: inline-block;
+  position: relative;
+}
+
+
+ul li a::after {
+  content: "";               /* Yeni bir içerik ekliyoruz (çizgi) */
+  position: absolute;        /* A etiketi içinde konumlandırıyoruz */
+  bottom: 0;                 /* Alt kısma yerleştiriyoruz */
+  left: 0;
+  width: 0;                  /* Başlangıçta çizgi görünmesin */
+  height: 2px;               /* Çizginin yüksekliği */
+  background-color: yellow;  /* Çizginin rengini sarı yapıyoruz */
+  transition: width 0.3s ease; /* Çizginin genişliğini animasyonla arttıracağız */
+}
+
+ul li a:hover::after {
+  width: 100%;               /* Hover olduğunda çizgi tam genişlikte olacak */
+}
+
+
+#shop-car{
+   
+  padding-right: 70px;
+  
+  }
+
+
+
+
+
+/*=================== MAIN ===================*/
 .main-text{
   text-align: center;
   padding-top: 100px;
@@ -67,9 +103,31 @@ h1{
   color: black;
 }
 
-
-
-/*=================== MAIN ===================*/
-
-
 /*=================== RESPONSIVE DESIGN ===================*/
+
+
+.furniture-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-items{
+  text-align: center;
+}
+
+.furniture-container img{
+  width: 300px;
+  height: 300px;
+
+}
+
+.furni-name{
+  color: black;
+}
+
+.furni-price{
+  font-weight: bold;
+  color: black;
+}
