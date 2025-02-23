@@ -78,23 +78,6 @@ ul li a:hover::after {
  margin-left: 20px;
 }
 
-<<<<<<< HEAD
-li{
-    padding-left: 50px;
-}
-
-#shop-car{
-   
-padding-right: 70px;
-
-}
-
-=======
-body {
-  font-family: Arial, sans-serif;
-}
->>>>>>> 534cbefc5b4844be10cc75a1c87946c3a2bfad14
-
 .navbar {
   background-color: #333;
   padding: 10px 0;
@@ -188,3 +171,6 @@ body {
 
 
 /*=================== RESPONSIVE DESIGN ===================*/
+
+
+
