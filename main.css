@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=================== BASE ===================*/
+:root {
+  --blue: #2f4d76;
+  --yellow: #FFD700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  background-color: var(--blue);
+  color: #ffffff;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*=================== NAV ===================*/
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#2f4d76 ;
+  
+}
+
+.nav-target{
+    margin-left: 70px;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.nav-menu li {
+ margin-left: 20px;
+}
+
+
+
+
+
+/*=================== MAIN ===================*/
+
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-top: 70px;
+ 
+  
+}
+
+.shop-button{
+   background-color: #2f4d76 ;
+   color: white;
+   padding: 10px 20px;
+   border-color: #ffffff;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-button:hover{
+    background-color: #FFD700;
+}
+
+.back-png{
+
+    position: absolute;
+    z-index: -1;
+    margin-left: 1100px;
+    margin-bottom: 250px;
+
+}
+
+
+/*=================== RESPONSIVE DESIGN ===================*/
