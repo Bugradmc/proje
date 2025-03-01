@@ -91,11 +91,13 @@ ul li a:hover::after {
 
 #cart-count {
   position: absolute;
-  background-color: red;
-  color: white;
+  top: 45px;
+  right: 80px;
+  background-color: yellow;
+  color: black;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
