@@ -78,6 +78,11 @@ ul li a:hover::after {
  margin-left: 20px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 954808b6697819cfd014cb442914c780e1bee6e3
 .navbar {
   background-color: #333;
   padding: 10px 0;
@@ -123,6 +128,13 @@ ul li a:hover::after {
 .nav-links a:hover::after {
   width: 100%;
 }
+
+#shop-car{
+  padding-right: 70px;
+  color: white;
+}
+
+
 
 
 
