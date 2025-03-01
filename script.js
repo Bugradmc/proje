@@ -3,18 +3,19 @@ function ShopNow(){
 }
 
 
-// Artı ikonunu seç
-const addIcon = document.querySelector('.plus-icon');
-const cartCount = document.getElementById('cart-count');
 
-// Başlangıç sayısı
-let count = 0;
+  const plusIcons = document.querySelectorAll('.plus-icon');
+  const cartCount = document.getElementById('cart-count');
 
-// Artı ikonu tıklanıldığında sepet sayısını artır
-addIcon.addEventListener('click', function() {
-  // Eğer sayı 9'dan küçükse, artır
-  if (count < 9) {
-    count++;
-    cartCount.textContent = count; // Sepet sayısını güncelle
-  }
-});
+
+  plusIcons.forEach(icon => {
+    icon.addEventListener('click', () => {
+     
+      let currentCount = cartCount.textContent;
+
+    
+      if (currentCount < 9) {
+        cartCount.textContent = ++currentCount;
+      }
+    });
+  });
